@@ -1,10 +1,20 @@
-/*
+/* RU
 
 Программе передаются два аргумента: имя файла, и текстовая строка для поиска.
 
 Необходимо найти все вхождения строки в бинарном файле, используя отображение на память с помощью системного вызова mmap.
 
 На стандартный поток вывода вывести список всех позиций (с нуля) в файле, где втречаются строка.
+
+*/
+
+/* ENG
+
+Two arguments are passed to the program: the file name, and a text string to search for.
+
+It is necessary to find all occurrences of a string in a binary file using memory mapping using the mmap system call.
+
+Output a list of all positions (from scratch) in the file where the string is found to the standard output stream.
 
 */
 
