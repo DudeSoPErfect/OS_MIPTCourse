@@ -1,4 +1,4 @@
-/*
+/* RU
 
 Программе в качестве аргументов передаются N имен текстовых файлов.
 
@@ -14,6 +14,25 @@ x = signo - SIGRTMIN; // SIGRTMIN <= signo <= SIGRTMAX
 Все остальные сигналы нужно игнорировать.
 
 Если для вывода используются высокоуровневые функции стандартной библиотеки Си, то необходимо выталкивать буфер обмена после вывода каждой строки.
+
+*/
+
+/* ENG
+
+N names of text files are passed to the program as arguments.
+
+The program must process many signals from SIGRTMIN to SIGRTMAX, and the signal number in the range from SIGRTMIN+1 determines the sequence number of the file from the arguments:
+
+x = signo - SIGRTMIN; // SIGRTMIN <= signo <= SIGRTMAX
+ // 1 <= x <= SIGRTMAX-SIGRTMIN
+ 
+When receiving the next signal, it is necessary to read one line from a certain file and output it to the standard output stream.
+
+When receiving a signal with the SIGRTMIN number, i.e. with the argument number equal to 0, - correctly terminate its work with the code 0.
+
+All other signals should be ignored.
+
+If high-level functions of the standard C library are used for output, then it is necessary to push the clipboard after each line is output.
 
 */
 
