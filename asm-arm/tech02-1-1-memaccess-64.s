@@ -1,4 +1,4 @@
-/*
+/* RU
 Реализуйте на языке ассемблера armv8 (AArch64) функцию с сигнатурой:
 
 int sum(int x0, size_t N, int *X)
@@ -6,6 +6,16 @@ int sum(int x0, size_t N, int *X)
 
 Обратите внимание на то, что тип int имеет размер 32 бит, а тип size_t - 64 бит.
 */
+
+/* ENG
+Implement an armv8 (AArch64) assembly language function with the signature:
+
+int sum(int x0, size_t N, int *X)
+The function should calculate the value x0+∑xi, where 0≤i<N
+
+Note that the int type has a size of 32 bits, and the size_t type is 64 bits.
+*/
+
 
 	.text
 	.global sum
