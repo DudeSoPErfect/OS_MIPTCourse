@@ -1,9 +1,17 @@
-/*
+/* RU
 Программе передаётся два аргумента: CMD1 и CMD2. Необходимо запустить два процесса, выполняющих эти команды, и перенаправить стандартный поток вывода CMD1 на стандартный поток ввода CMD2.
 
 В командной строке это эквивалентно CMD1 | CMD2.
 
 Родительский процесс должен завершаться самым последним!
+*/
+
+/* ENG
+Two arguments are passed to the program: CMD1 and CMD2. It is necessary to start two processes executing these commands and redirect the standard output stream CMD1 to the standard input stream CMD2.
+
+On the command line, this is equivalent to CMD1|CMD2.
+
+The parent process must be completed the very last!
 */
 
 #include <unistd.h>
