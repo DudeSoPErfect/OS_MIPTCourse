@@ -1,9 +1,17 @@
-/*
+/* RU
 Реализуйте программу, которая принимает два аргумента: CMD - команда для запуска, IN - имя файла, направляемого на ввод.
 
 Программа должна запускать указанную команду, передавая ей на вход содежимое файла IN.
 
 На стандартный поток вывода вывести количество байт, которое было записано запущенной командой в стандартный поток вывода. Вывод самой команды никуда выводить не нужно.
+*/
+
+/* ENG
+Implement a program that takes two arguments: CMD is the command to run, IN is the name of the file to be sent for input.
+
+The program must run the specified command, passing the contents of the IN file to it as input.
+
+Output to the standard output stream the number of bytes that was written by the running command to the standard output stream. The output of the command itself does not need to be output anywhere.
 */
 
 #include <unistd.h>
