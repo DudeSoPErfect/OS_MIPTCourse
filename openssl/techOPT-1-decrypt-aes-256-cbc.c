@@ -1,4 +1,4 @@
-/*
+/* RU
 
 Программе передается аргумент - пароль.
 
@@ -9,6 +9,20 @@
 Используйте API OpenSSL/LibreSSL. Запуск сторонних команд через fork+exec запрещен.
 
 Отправляйте только исходный файл Си-программы с решением.
+
+*/
+
+/* ENG
+
+The password argument is passed to the program.
+
+Data encrypted with the AES-256-CBC algorithm with salt is fed to the standard input stream. The SHA-256 algorithm is used to obtain the initial vector and key from the password and salt.
+
+It is necessary to decrypt the data and output it to a standard output stream.
+
+Use the OpenSSL/LibreSSL API. Running third-party commands via fork+exec is prohibited.
+
+Send only the source file of the C program with the solution.
 
 */
 
