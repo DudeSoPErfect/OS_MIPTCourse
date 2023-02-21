@@ -11,15 +11,15 @@
 *
 
 * ENG
-Implement the solve function in the armv8 (AArch64) assembly language, with a prototype
+*Implement the solve function in the armv8 (AArch64) assembly language, with a prototype
 
-int solve(int64_t A, int B, int C, int D);
+*int solve(int64_t A, int B, int C, int D);
  
-which finds the minimum value x ∈[0,254], which is one of the roots of the equation: Ax3+Bx2+Cx+D=0.
+*which finds the minimum value x ∈[0,254], which is one of the roots of the equation: Ax3+Bx2+Cx+D=0.
 
-All arguments and the value of the expression are represented by 32-bit signed integers.
+*All arguments and the value of the expression are represented by 32-bit signed integers.
 
-It is guaranteed that an integer solution exists on the test data.
+*It is guaranteed that an integer solution exists on the test data.
 *
 
 
