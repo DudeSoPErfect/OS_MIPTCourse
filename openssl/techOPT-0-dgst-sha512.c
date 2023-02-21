@@ -1,4 +1,4 @@
-/*
+/* RU
 
 Программе на стандартный поток ввода передается последовательность байт.
 
@@ -7,6 +7,18 @@
 Используйте API OpenSSL/LibreSSL. Запуск сторонних команд через fork+exec запрещен.
 
 Отправляйте только исходный файл Си-программы с решением.
+
+*/
+
+/* ENG
+
+A sequence of bytes is passed to the program on the standard input stream.
+
+It is necessary to calculate the SHA-512 checksum and output this value in hex form with the prefix 0x.
+
+Use the OpenSSL/LibreSSL API. Running third-party commands via fork+exec is prohibited.
+
+Send only the source file of the C program with the solution.
 
 */
 
