@@ -1,4 +1,4 @@
-/*
+/* RU
 
 Программе задается единственный аргумент - номер TCP-порта.
 
@@ -7,6 +7,18 @@
 Одновременных подключений может быть много. Использовать несколько потоков или процессов запрещено.
 
 Сервер должен корректно завершать работу при получении сигнала SIGTERM.
+
+*/
+
+/* ENG
+
+The program is given a single argument - the TCP port number.
+
+It is necessary to accept incoming TCP/IPv4 connections for the localhost server, read data from clients in text form, and send them back in text form, replacing all lowercase letters with uppercase ones. All processed characters are from ASCII encoding.
+
+There can be many simultaneous connections. It is forbidden to use multiple threads or processes.
+
+The server must shut down correctly when the SIGTERM signal is received.
 
 */
 
