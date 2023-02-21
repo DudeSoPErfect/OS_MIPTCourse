@@ -1,4 +1,4 @@
-/*
+/* RU
 Реализуйте программу на языке ассемблера armv8 (AArch64), которая вычисляет сумму двух целых 32-битных десятичных чисел.
 
 Можно использовать функции стандартной библиотеки языка Си scanf и printf.
@@ -6,6 +6,16 @@
 В качестве точки входа можно считать функцию main.
 
 */
+
+/* ENG
+Implement an armv8 (AArch64) assembly language program that calculates the sum of two 32-bit decimal integers.
+
+You can use the functions of the standard C library scanf and printf.
+
+The main function can be considered as an entry point.
+
+*/
+
 
 	.text
 	.global main
