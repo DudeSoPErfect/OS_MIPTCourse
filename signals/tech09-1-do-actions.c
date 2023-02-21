@@ -1,4 +1,4 @@
-/*
+/* RU
 
 Программа при запуске сообщает на стандартный поток вывода свой PID, после чего читает со стандартного потока вывода целое число - начальное значение, которое затем будет изменяться.
 
@@ -11,6 +11,22 @@
 Семантика повединия сигналов (Sys-V или BSD) считается не определенной.
 
 Не забывайте выталкивать буфер вывода.
+
+*/
+
+/* ENG
+
+At startup, the program reports its PID to the standard output stream, after which it reads an integer from the standard output stream - the initial value, which will then change.
+
+When a SIGUSR1 signal is received, increase the current value by 1 and output it to the standard output stream.
+
+When a SIGUSR2 signal is received, multiply the current value by -1 and output it to the standard output stream.
+
+When one of the SIGTERM or SIGINT signals arrives, it is necessary to complete its work with the return code 0.
+
+The semantics of behavioral signals (Sys-V or BSD) is considered undefined.
+
+Don't forget to push out the output buffer.
 
 */
 
