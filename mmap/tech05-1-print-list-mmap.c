@@ -1,4 +1,4 @@
-/*
+/* RU
 
 Программе в аргументе командной строки передается имя файла с бинарными данными в Little-Endian.
 
@@ -15,6 +15,26 @@ struct Item {
 Выведите на экран значения элементов в списке в текстовом представлении.
 
 Используйте отображение содержимого файла на память.
+
+*/
+
+/* ENG
+
+The name of the file with binary data in Little-Endian is passed to the program in the command-line argument.
+
+The file stores a single-linked list of elements inside itself:
+
+struct Item {
+ int value;
+ uint32_t next_pointer;
+};
+The value field stores the value of the list item, the next_pointer field stores the position in the file (in bytes) indicating the next item. The sign of the last element is the next_pointer value equal to 0.
+
+The location of the first element of the list (if it exists) is strictly in the zero position in the file, the location of the rest is random.
+
+Display the values of the items in the list in a text view.
+
+Use the memory mapping of the file contents.
 
 */
 
