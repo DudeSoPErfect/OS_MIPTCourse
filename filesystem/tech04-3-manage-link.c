@@ -1,10 +1,20 @@
-/*
+/* RU
 
 Программе на стандартном потоке ввода передаётся список имён файлов.
 
 Если файл является символической ссылкой, то нужно вывести абсолютное имя того файла, на который эта ссылка указывает.
 
 Если файл является регулярным, то необходимо создать символическую ссылку в текущем каталоге, приписав в названии файла префикс link_to_.
+
+*/
+
+/* ENG
+
+A list of file names is passed to the program on the standard input stream.
+
+If the file is a symbolic link, then you need to output the absolute name of the file to which this link points.
+
+If the file is regular, then you need to create a symbolic link in the current directory by assigning the prefix link_to_ in the file name.
 
 */
 
