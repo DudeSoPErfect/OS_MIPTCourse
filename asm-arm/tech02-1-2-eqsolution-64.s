@@ -1,4 +1,4 @@
-/* RU
+* RU
 Реализуйте на языке ассемблера armv8 (AArch64) функцию solve, с прототипом
 
 int solve(int64_t A, int B, int C, int D);
@@ -8,9 +8,9 @@ int solve(int64_t A, int B, int C, int D);
 Все аргументы и значение выражения представимы 32-разрядными знаковыми целыми числами.
 
 Гарантируется, что на тестовых данных существует целочисленное решение.
-*/
+*
 
-/* ENG
+* ENG
 Implement the solve function in the armv8 (AArch64) assembly language, with a prototype
 
 int solve(int64_t A, int B, int C, int D);
@@ -20,7 +20,7 @@ which finds the minimum value x ∈[0,254], which is one of the roots of the equ
 All arguments and the value of the expression are represented by 32-bit signed integers.
 
 It is guaranteed that an integer solution exists on the test data.
-*/
+*
 
 
 	.text
