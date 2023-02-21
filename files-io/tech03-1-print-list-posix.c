@@ -1,4 +1,4 @@
-/*
+/* RU
 Программе в аргументе командной строки передается имя файла с бинарными данными в Little-Endian.
 
 Файл хранит внутри себя односвязный список элементов:
@@ -14,6 +14,25 @@ struct Item {
 Выведите на экран через пробел значения элементов в списке в текстовом представлении.
 
 Для работы с файлом использовать только низкоуровневый ввод-вывод POSIX.
+
+*/
+
+/* ENG
+The name of the file with binary data in Little-Endian is passed to the program in the command line argument.
+
+The file stores a single-linked list of elements inside itself:
+
+struct Item {
+ int value;
+ uint32_t next_pointer;
+};
+The value field stores the value of the list item, the next_pointer field stores the position in the file (in bytes) indicating the next item. The sign of the last element is the next_pointer value equal to 0.
+
+The location of the first element of the list (if it exists) is strictly in the zero position in the file, the location of the rest is random.
+
+Display the values of the items in the list in the text view separated by a space.
+
+To work with the file, use only low-level POSIX I/O.
 
 */
 
@@ -40,9 +59,7 @@ int main(int argc, char** argv) {
         if (nread != 8) {
             return 0;
         }
-        //ssize_t nread1 = read(r, a.value, 4);
-        //ssize_t nread2 = read(r, a.next_pointer, 4);
-        //ssize_t nwrite = write(1, a.value, 4);
+
         printf("%d ", a.value);
     
         if (a.next_pointer == 0) {
