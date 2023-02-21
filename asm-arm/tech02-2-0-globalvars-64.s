@@ -1,4 +1,4 @@
-/*
+/* RU
 Реализуйте на языке ассемблера armv8 (AArch64) функцию calculate, 
 которая вычисляет значение выражения: R = ( A * B ) + ( C * D ),
 где A, B, C, и D - это глобальные переменные типа uint64_t, объявленные во внешнем модуле компиляции, 
@@ -6,7 +6,7 @@
 
 */
 
-/*
+/* ENG
 Implement the calculate function in the armv8 (AArch64) assembly language,
 which calculates the value of the expression: R = ( A * B ) + (C * D ),
 where A, B, C, and D are global variables of type uint64_t declared in the external compilation module,
