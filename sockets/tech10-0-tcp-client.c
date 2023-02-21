@@ -1,4 +1,4 @@
-/*
+/* RU
 
 Программе передаются два аргумента: строка с IPv4-адресом в стандартной десятичной записи (четыре числа, разделенные точкой), и номер порта.
 
@@ -7,6 +7,18 @@
 В ответ на каждое полученное число, сервер отправляет целое число (в таком же формате), и все эти числа необходимо вывести на стандартный поток вывода в текстовом виде.
 
 Если сервер по своей инициативе закроет соединение, то нужно завершить работу с кодом возврата 0.
+
+*/
+
+/* ENG
+
+Two arguments are passed to the program: a string with an IPv4 address in standard decimal notation (four numbers separated by a dot), and the port number.
+
+The program must establish a connection with the specified server, then read signed integers in text format from the standard input stream, and send them in binary form to the server. The byte order is Little Endian.
+
+In response to each received number, the server sends an integer (in the same format), and all these numbers must be output to the standard output stream in text form.
+
+If the server closes the connection on its own initiative, then you need to exit with the return code 0.
 
 */
 
