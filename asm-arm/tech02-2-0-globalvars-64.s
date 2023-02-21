@@ -6,6 +6,14 @@
 
 */
 
+/*
+Implement the calculate function in the armv8 (AArch64) assembly language,
+which calculates the value of the expression: R = ( A * B ) + (C * D ),
+where A, B, C, and D are global variables of type uint64_t declared in the external compilation module,
+and R, is a global variable type uint64_t in the current compilation module.
+
+*/
+
 	.text
 	.global calculate
 	.global R
