@@ -1,4 +1,4 @@
-/*
+/* RU
 
 Программе передаётся произвольное количество аргументов: CMD1, CMD2, ..., CMDN.
 
@@ -8,7 +8,7 @@
 
 */
 
-/*
+/* ENG
 
 An arbitrary number of arguments is passed to the program: CMD1, CMD2, ..., CMDN.
 
