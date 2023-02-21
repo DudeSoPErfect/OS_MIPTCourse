@@ -1,4 +1,4 @@
-/*
+/* RU
 
 Единственным аргументом программы является целое число N>1 - число потоков, которые нужно создать.
 
@@ -9,6 +9,20 @@
 На стандартный поток вывода необходимо вывести итоговую сумму всех чисел.
 
 Минимизируйте объем используемой памяти настолько, насколько это возможно. Обратите внимание на ограничение по памяти.
+
+*/
+
+/* ENG
+
+The only argument of the program is an integer N>1 - the number of threads to be created.
+
+A sequence of integers is set on the standard input stream.
+
+Implement a program that runs N threads, each of which reads numbers from a standard input stream, and calculates partial sums. Note that the number of threads is not necessarily equal to the number of numbers.
+
+The total sum of all the numbers must be output to the standard output stream.
+
+Minimize the amount of memory used as much as possible. Pay attention to the memory limit.
 
 */
 
