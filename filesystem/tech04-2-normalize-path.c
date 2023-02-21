@@ -1,4 +1,4 @@
-/*
+/* RU
 Реализуйте функцию
 
 extern void normalize_path(char * path);
@@ -22,6 +22,34 @@ abrakadabra/abc
 Входные данные
 /var/log/../lib/./ejexec
 Результат работы
+/var/lib/ejexec
+
+*/
+
+/* ENG
+Implement the function
+
+extern void normalize_path(char * path);
+which handles strings representing file paths (ending with any character other than /) or directories (ending with the / character).
+
+The function should bring the text into canonical form:
+
+remove duplication of consecutive characters /
+process fragments ./ and ../
+It is forbidden to use library string functions.
+
+It is forbidden to allocate memory for a new line, - use an existing one, the argument is not a constant string.
+
+Use pointer arithmetic; it is forbidden to refer to symbols as elements of an array.
+
+Examples
+Input data
+of abrakadabra///abc
+The result of the work
+abrakadabra/abc
+Input data
+/var/log/../lib/./ejexec
+Result of the work
 /var/lib/ejexec
 
 */
