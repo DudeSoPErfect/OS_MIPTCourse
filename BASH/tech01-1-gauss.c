@@ -1,4 +1,4 @@
-/*
+/* RU
 Реализуйте программу для командного интерпретатора bash, которая вычисляет вещественные корни системы линейных алгебраических уравнений методом Гаусса.
 
 Единственным аргументом скрипта является csv-файл c матрицей (N,N+1) вида:
@@ -14,6 +14,25 @@
 В скрипте допускается использовать только команды ввода-вывода и утилиту bc (для вещественнозначных вычислений).
 
 Использовать вызов интерпретаторов высокоуровневых языков (Perl, Python и пр.) запрещено.
+
+*/
+
+/* ENG
+Implement a program for the bash command interpreter that calculates the real roots of a system of linear algebraic equations by the Gauss method.
+
+The only argument of the script is a csv file with a matrix (N,N+1) of the form:
+
+2,1,-1,8
+-3,-1,2,-11
+-2,1,2,-3
+The script should calculate the values and display them in text form on the screen in the form of strings with values:
+
+2.00000000000000000000
+3.00000000000000000000
+-1.00000000000000000000
+Only I/O commands and the bc utility (for real-valued calculations) can be used in the script.
+
+It is forbidden to use the call of interpreters of high-level languages (Perl, Python, etc.).
 
 */
 
