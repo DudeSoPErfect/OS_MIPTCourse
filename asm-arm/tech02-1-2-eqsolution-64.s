@@ -1,26 +1,26 @@
-/* RU
-Реализуйте на языке ассемблера armv8 (AArch64) функцию solve, с прототипом
+* RU
+*Реализуйте на языке ассемблера armv8 (AArch64) функцию solve, с прототипом
 
-int solve(int64_t A, int B, int C, int D);
+*int solve(int64_t A, int B, int C, int D);
       
-которая находит минимальное значение x ∈[0,254], которое является одним из корней уравнения: Ax3+Bx2+Cx+D=0.
+*которая находит минимальное значение x ∈[0,254], которое является одним из корней уравнения: Ax3+Bx2+Cx+D=0.
 
-Все аргументы и значение выражения представимы 32-разрядными знаковыми целыми числами.
+*Все аргументы и значение выражения представимы 32-разрядными знаковыми целыми числами.
 
-Гарантируется, что на тестовых данных существует целочисленное решение.
+*Гарантируется, что на тестовых данных существует целочисленное решение.
 */
 
-/* ENG
-Implement the solve function in the armv8 (AArch64) assembly language, with a prototype
+* ENG
+*Implement the solve function in the armv8 (AArch64) assembly language, with a prototype
 
-int solve(int64_t A, int B, int C, int D);
+*int solve(int64_t A, int B, int C, int D);
  
-which finds the minimum value x ∈[0,254], which is one of the roots of the equation: Ax3+Bx2+Cx+D=0.
+*which finds the minimum value x ∈[0,254], which is one of the roots of the equation: Ax3+Bx2+Cx+D=0.
 
-All arguments and the value of the expression are represented by 32-bit signed integers.
+*All arguments and the value of the expression are represented by 32-bit signed integers.
 
-It is guaranteed that an integer solution exists on the test data.
-*/
+*It is guaranteed that an integer solution exists on the test data.
+*
 
 
 	.text
