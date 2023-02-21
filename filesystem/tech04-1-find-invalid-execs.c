@@ -1,9 +1,18 @@
-/*
+/* RU
 Программе на стандартном потоке ввода передаётся список имён файлов.
 
 Необходимо вывести на стандартный поток вывода имена "неправильных" выполняемых файлов, 
 то есть файлов, которые отмечены как исполняемые, но при этом они заведомо не могут быть выполнены в системе 
 (не начинаются с корректной строки #!, содержащей запускаемый интерпретатор, и не являются ELF-файлами).
+
+*/
+
+/* ENG
+A list of file names is passed to the program on the standard input stream.
+
+It is necessary to output the names of "incorrect" executable files to the standard output stream, 
+that is, files that are marked as executable, but at the same time they obviously cannot be executed in the system 
+(do not start with the correct string #! containing the interpreter to be run, and are not ELF files).
 
 */
 
