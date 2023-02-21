@@ -1,4 +1,4 @@
-*/
+/* RU
 Реализуйте Lock-Free односвязный список из элементов:
 
 typedef struct Item {
@@ -19,7 +19,30 @@ typedef struct Item {
 Минимизируйте используемый объем памяти.
 
 Для уменьшения времени простоя используйте sched_yield в конце каждой итерации.
-/*
+*/
+
+/* ENG
+Implement a Lock-Free singly linked list of elements:
+
+typedef struct Item {
+ struct Item *next;
+ int64_t value;
+} item_t;
+
+The program takes as an argument the values N - the number of threads, and k - the number of elements created by each thread.
+
+There can be a lot of these streams - several dozen!
+
+Each thread must add k elements with values from i*k to (i+1)*k to the simply connected list, where i is the number of the thread from 0 to N.
+
+After all threads are finished, output all the values of the resulting single-linked list.
+
+It is forbidden to use mutexes, semaphores or active waiting.
+
+Minimize the amount of memory used.
+
+To reduce downtime, use the sched_yield at the end of each iteration.
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
