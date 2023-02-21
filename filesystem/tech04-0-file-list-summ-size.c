@@ -1,8 +1,16 @@
-/*
+/* RU
 
 Программе на стандартном потоке ввода передаётся список имён файлов.
 
 Необходимо посчитать суммарный размер в байтах всех файлов, которые являются регулярными.
+
+*/
+
+/* ENG
+
+A list of file names is passed to the program on the standard input stream.
+
+It is necessary to calculate the total size in bytes of all files that are regular.
 
 */
 
