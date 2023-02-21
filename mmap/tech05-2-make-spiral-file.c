@@ -1,4 +1,4 @@
-/*
+/* RU
 
 Программе передаются три аргумента: имя файла, положительное целое число N - размер квадратной матрицы, и положительное число W - ширина клетки матицы в символах.
 
@@ -20,6 +20,30 @@
    14   23   22   21    8
    13   12   11   10    9
   
+*/
+
+/* ENG
+
+Three arguments are passed to the program: the file name, a positive integer N is the size of the square matrix, and a positive number W is the width of the matrix cell in characters.
+
+It is necessary to form a text in the specified file that contains a matrix consisting of numbers from 1 to N2, so that the numbers fill it in a spiral, clockwise.
+
+The numbers should be aligned to the right border of the matrix cell.
+
+Use mmap to write to a file.
+
+You can use format output functions to convert a number to a string.
+
+Examples
+Input data
+./solution out.txt 5 5
+The result of the work in the file out.txt
+1 2 3 4 5
+ 16 17 18 19 6
+ 15 24 25 20 7
+ 14 23 22 21 8
+ 13 12 11 10 9
+ 
 */
 
 #define _GNU_SOURCE
