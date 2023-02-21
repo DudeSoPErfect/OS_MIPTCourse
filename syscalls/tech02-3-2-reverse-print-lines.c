@@ -1,4 +1,4 @@
-/*
+/* RU
 
 Реализуйте на языке Си программу, которая читает со стандартного потока ввода текст, после чего выводит все строки текста в обратном порядке.
 
@@ -7,6 +7,18 @@
 Точка входа в программу - функция _start.
 
 Файл может не содержать перевода строки в конце.
+
+*/
+
+/* ENG
+
+Implement a program in C that reads text from a standard input stream, and then outputs all lines of text in reverse order.
+
+The use of the C standard library is prohibited.
+
+The entry point to the program is the _start function.
+
+The file may not contain a line feed at the end.
 
 */
 
