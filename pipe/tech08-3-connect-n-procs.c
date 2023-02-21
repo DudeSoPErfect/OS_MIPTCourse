@@ -8,6 +8,16 @@
 
 */
 
+/*
+
+An arbitrary number of arguments is passed to the program: CMD1, CMD2, ..., CMDN.
+
+It is necessary to implement the equivalent of running their command line: CMD1 | CMD2 |... | CMDN.
+
+The parent process must be completed the last!
+
+*/
+
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
