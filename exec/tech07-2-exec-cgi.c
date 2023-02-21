@@ -1,4 +1,4 @@
-/*
+/* RU
 Программе на стандартном потоке ввода задается текст вида
 
 GET /some_path/script.py?a=123&b=abrakadabra HTTP/1.1
@@ -25,6 +25,40 @@ HTTP/1.1 403 ERROR
 Гарантируется, что входные данных содержат только синтаксически корректные запросы.
 
 Необходимо реализовать поддержку следующих переменных окружения:
+
+HTTP_HOST
+QUERY_STRING
+REQUEST_METHOD
+SCRIPT_NAME
+*/
+
+/* ENG
+The program is given a text of the form on the standard input stream
+
+GET /some_path/script.py?a=123&b=abrakadabra HTTP/1.1
+Host: www.example.com
+
+Pay attention to the last empty line.
+
+It is necessary to generate and output an HTTP response to the standard output stream, which, if successful, has the form:
+
+HTTP/1.1 200 OK
+[script output content]
+If the specified file does not exist, then it is necessary to output the text
+
+HTTP/1.1 404 ERROR
+
+If the file exists but is not executable, then the text
+
+HTTP/1.1 403 ERROR
+
+The script may (but does not have to) have CGI parameters that it needs to pass for processing.
+
+It is necessary to implement support for only GET requests, but not POST.
+
+It is guaranteed that the input data contains only syntactically correct queries.
+
+It is necessary to implement support for the following environment variables:
 
 HTTP_HOST
 QUERY_STRING
