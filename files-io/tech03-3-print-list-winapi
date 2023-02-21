@@ -1,0 +1,62 @@
+/*
+Задача, аналогичная print-list-posix, но требуется решение под Windows.
+
+Программе в аргументе командной строки передается имя файла с бинарными данными в Little-Endian.
+
+Файл хранит внутри себя односвязный список элементов:
+
+struct Item
+{
+  int value;
+  uint32_t next_pointer;
+};
+Поле value храние значение элемента списка, поле next_pointer - позицию в файле (в байтах), указывающую на следующий элемент. Признаком последнего элемента является значение next_pointer, равное 0.
+
+Расположение первого элемента списка (если он существует) - строго в нулевой позиции в файле, расположение остальных - случайным образом.
+
+Выведите на экран значения элементов в списке в текстовом представлении.
+
+Для работы с файлом использовать только низкоуровневый ввод-вывод WinAPI.
+
+*/
+
+#define _FILE_OFFSET_BITS 64
+
+#include <windows.h>
+#include <stdint.h>
+#include <stdio.h>
+
+typedef struct {
+    int value;
+    uint32_t next_pointer;
+} Item;
+
+
+int main(int argc, char** argv)
+{
+
+    const char* r = argv[1];
+
+    HANDLE file = CreateFileA(r, GENERIC_READ, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+    OVERLAPPED b = {0};
+
+    Item a;
+    while (1) {
+
+        if (!ReadFile(file, &a, sizeof(Item), NULL, &b)) 
+            break;
+        
+    
+        printf("%d ", a.value);
+
+
+        b.Offset = a.next_pointer;
+        if (b.Offset == 0)
+            break;
+
+    }
+
+    CloseHandle(file);
+    return 0;    
+
+}
