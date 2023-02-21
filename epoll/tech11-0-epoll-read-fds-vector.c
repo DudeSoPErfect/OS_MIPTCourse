@@ -1,4 +1,4 @@
-/*
+/* RU
 
 Реализуйте функцию с сигнатурой:
 
@@ -10,6 +10,21 @@
 Скорость операций ввода-вывода у файловых дескрипторов - случайная. Необходимо минимизировать суммарное астрономическое время чтения данных.
 
 По окончании чтения необходимо закрыть все файловые дескрипторы.
+
+*/
+
+/* ENG
+
+Implement a function with a signature:
+
+ extern size_t
+read_data_and_count(size_t N, int in[N])
+
+which reads data from file descriptors in[X] for all 0 ≤ X < N , and returns the total number of bytes read from all file descriptors.
+
+The speed of I/O operations for file descriptors is random. It is necessary to minimize the total astronomical data reading time.
+
+At the end of reading, it is necessary to close all file descriptors.
 
 */
 
