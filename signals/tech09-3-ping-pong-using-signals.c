@@ -1,4 +1,4 @@
-/*
+/* RU
 
 Программа обрабатывать сигнал SIGRTMIN, вместе с которым передается некоторое беззнаковой 32-битное целое число N.
 
@@ -9,6 +9,20 @@
 Взаимодействие останавливается при получении значения N==0, после чего нужно корректно завершить работу.
 
 Запрещается использовать signalfd, программа будет компилироваться без поддержки Linux-специфичных расширений.
+
+*/
+
+/* ENG
+
+The program processes the SIGRTMIN signal, along with which some unsigned 32-bit integer N is transmitted.
+
+All other signals should be ignored.
+
+When receiving the next signal, you need to reduce this number by one and send it back to the process that sent it (using the same signal).
+
+The interaction stops when the value N ==0 is received, after which it is necessary to shut down the work correctly.
+
+It is forbidden to use signalfd, the program will compile without support for Linux-specific extensions.
 
 */
 
