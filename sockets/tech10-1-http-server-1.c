@@ -1,4 +1,4 @@
-/*
+/* RU
 
 Необходимо реализовать программу-сервер, которой передаются два аргумента: номер порта и полный путь к каталогу с данными.
 
@@ -23,7 +23,35 @@
 
 После отправки ответа клиенту, нужно закрыть соединение и не нужно ждать ожидать от клиента следующих запросов.
 
-/*
+*/
+
+/* ENG
+
+It is necessary to implement a server program to which two arguments are passed: the port number and the full path to the data directory.
+
+The program must listen for a TCP connection on the localhost server and the specified port number.
+
+After receiving the SIGTERM or SIGINT signal, the server must finish processing the current connection, if there is one, and then finish its work correctly.
+
+Attention: in this problem, a pair of characters "\r\n" is considered a sign of the end of lines, and not a single character '\n'.
+
+Each connection should be handled as follows:
+
+The client sends a string like GET FILENAME HTTP/1.1
+The client sends an arbitrary number of non-empty rows
+The client sends an empty string
+
+After receiving an empty string from the client, the server must send the client the following data:
+
+The line HTTP/1.1 200 OK if the file exists, or HTTP/1.1 404 Not Found if the file does not exist, or HTTP/1.1 403 Forbidden if the file exists but is not readable
+The string Content-Length: %d, where %d is the file size in bytes
+Empty string
+Contents of the as-is file
+
+After sending a response to the client, you need to close the connection and do not need to wait for the next requests from the client.
+
+*/
+
 
 #include <unistd.h>
 #include <stdio.h>
