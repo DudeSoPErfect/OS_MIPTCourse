@@ -1,2 +1,3 @@
 # OS_MIPT_Course
-Tasks with their solutions of Operating Systems MIPT course
+
+Полный список задач и решений курса "Операционные системы" 2 курса МФТИ ФПМИ ИВТ
