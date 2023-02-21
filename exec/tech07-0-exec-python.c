@@ -1,10 +1,20 @@
-/*
+/* RU
 
 Программе на стандартный поток ввода задается некоторое арифметическое выражение в синтаксисе языка python3.
 
 Необходимо вычислисть это выражение, и вывести результат.
 
 Использовать дополнительные процессы запрещено.
+
+*/
+
+/* ENG
+
+The program is assigned some arithmetic expression in the syntax of the python3 language to the standard input stream.
+
+It is necessary to calculate this expression, and output the result.
+
+It is forbidden to use additional processes.
 
 */
 
