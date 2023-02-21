@@ -1,4 +1,4 @@
-/*
+/* RU
 
 Программе в качестве аргумента передается имя файла программы на языке Си. 
 Необходимо попытаться её скомпилировать с помощью штатного компилятора gcc, 
@@ -9,6 +9,19 @@
 Используйте передачу текста от компилятора через каналы.
 
 */
+
+/* ENG
+
+The program file name in C is passed to the program as an argument. 
+It is necessary to try to compile it using the standard gcc compiler,
+and then output to the standard output stream: the number of lines of the program with errors (error),
+and the number of lines of the program with warnings (warning). Several errors or warnings can be found in one line - it is necessary to output exactly the number of lines.
+
+It is forbidden to create temporary files to save compiler error output. 
+Use text transmission from the compiler via channels.
+
+*/
+
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
