@@ -1,4 +1,4 @@
-/*
+/* RU
 
 На стандартном потоке ввода задается строка текста, которая состоит слова (последовательности непробельных символов), между которыми может быть произвольное количество пробельных символов, включая перевод строки.
 
@@ -11,6 +11,22 @@
 Итоговая программа должна вернуться с кодом возврата 0.
 
 Размер каждого слова не превышает 4096 байт.
+
+*/
+
+/* ENG
+
+On a standard input stream, a line of text is set, which consists of words (a sequence of non-whitespace characters), between which there can be an arbitrary number of whitespace characters, including a line feed.
+
+It is necessary to count the number of words, if it is known that there are no more than 255, and output this value to the standard output stream.
+
+Use the creation of new processes in such a way that each process reads no more than one word, for example, using scanf("%s", ...).
+
+The output of the result is possible only from the process that was launched the very first (i.e. from the source program).
+
+The final program should return with a return code of 0.
+
+The size of each word does not exceed 4096 bytes.
 
 */
 
