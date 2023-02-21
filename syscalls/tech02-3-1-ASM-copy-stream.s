@@ -1,9 +1,18 @@
-/*
+/* RU
 Реализуйте на языке ассемблера x86_64 программу, которая копирует содержимое со стандартного потока ввода на стандартный поток вывода.
 
 Использование стандартной библиотеки Си запрещено.
 
 Точка входа в программу - функция _start.
+
+*/
+
+/* ENG
+Implement a program in the x86_64 assembly language that copies the contents from the standard input stream to the standard output stream.
+
+The use of the C standard library is prohibited.
+
+The entry point to the program is the _start function.
 
 */
 
