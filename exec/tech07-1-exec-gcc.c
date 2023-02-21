@@ -1,8 +1,16 @@
-/*
+/* RU
 
 Программе на стандартном потоке ввода задается выражение в синтаксисе языка Си.
 
 Необходимо вычислить значение этого выражения (итоговый результат представим типом int) и вывести его на стандартный поток вывода.
+
+*/
+
+/* ENG
+
+The program is given an expression in the syntax of the C language on the standard input stream.
+
+It is necessary to calculate the value of this expression (the final result is represented by the int type) and output it to the standard output stream.
 
 */
 
