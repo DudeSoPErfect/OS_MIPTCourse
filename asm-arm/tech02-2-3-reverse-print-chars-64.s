@@ -1,9 +1,17 @@
-/*
+/* RU
 Реализуйте программу на языке ассемблера armv8 (AArch64), которая считывает символы со стандартного потока ввода, а затем выводит их в обратном порядке.
 
 Можно использовать функции стандартной библиотеки языка Си: fgetc, fputc, getchar_unlocked, putchar_unlocked, realloc и free.
 
 В качестве точки входа можно считать функцию main.
+*/
+
+/* ENG
+Implement an armv8 (AArch64) assembly language program that reads characters from a standard input stream and then outputs them in reverse order.
+
+You can use the functions of the standard C library: fgetc, fputc, getchar_unlocked, putchar_unlocked, realloc and free.
+
+The main function can be considered as an entry point.
 */
 
 
