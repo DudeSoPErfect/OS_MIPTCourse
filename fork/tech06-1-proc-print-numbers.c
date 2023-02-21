@@ -1,4 +1,4 @@
-/*
+/* RU
 
 Программе передается аргумент - целое число N > 0.
 
@@ -8,6 +8,19 @@
 
 1 2 3 4 ... N
 Внимание! В этой задаче будет сравнение с учетом пробельных символов. Между числами должен быть ровно один пробел, а завершается строка символом перевода строки.
+
+*/
+
+/* ENG
+
+An argument is passed to the program - an integer N > 0.
+
+It is necessary to create N-1 additional processes so that each process has no more than one child process.
+
+Each of the processes must output exactly one number to the standard input stream so that the output is a string:
+
+1 2 3 4 ... N
+Attention! In this task, there will be a comparison taking into account whitespace characters. There must be exactly one space between the numbers, and the line ends with a newline character.
 
 */
 
