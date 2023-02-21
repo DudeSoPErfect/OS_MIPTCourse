@@ -1,4 +1,4 @@
-/*
+/* RU
 
 Программа запускается с двумя целочисленными аргументами: N>0 - количество итераций; и k>0 - количество потоков.
 
@@ -13,6 +13,24 @@
 Запрещено использовать глобальные переменные.
 
 Для вывода используйте формат %.10g.
+
+*/
+
+/* ENG
+
+The program starts with two integer arguments: N>0 - the number of iterations; and k>0 - the number of threads.
+
+It is necessary to create an array of k real numbers, and then run k threads, each of which works with its own array element and two neighboring ones.
+
+Each thread increases the value of its element by 1 N times, increases the value of the neighbor on the left by 0.99, and increases the value of the neighbor on the right by 1.01.
+
+For threads that have no neighbors on the right (k-1) or on the left (0), the first and last values of the array are considered neighbors, respectively.
+
+After all threads have performed N iterations, it is necessary to output the values of all elements.
+
+It is forbidden to use global variables.
+
+Use the %.10g format for output.
 
 */
 
