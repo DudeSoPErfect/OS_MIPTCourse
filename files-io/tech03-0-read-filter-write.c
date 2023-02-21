@@ -1,4 +1,4 @@
-/*
+/* RU
 Программе в аргументах командной строки передаются три имени файла. Первый аргумент - входной файл, два остальных - выходные.
 
 Реализуйте программу, которая читает символы из первого файла, во второй файл записывает только цифры, а в третий - всё остальное.
@@ -10,6 +10,21 @@
 Если не возможно создать один из выходных файлов, то завершить работу с кодом 2.
 
 При возникновении других ошибок ввода-вывода - завершить работу с кодом 3.
+
+*/
+
+/* ENG
+Three file names are passed to the program in command line arguments. The first argument is an input file, the other two are output.
+
+Implement a program that reads characters from the first file, writes only numbers to the second file, and everything else to the third.
+
+Only low-level POSIX I/O is allowed.
+
+If the input file does not exist, then you need to exit with code 1.
+
+If it is not possible to create one of the output files, then finish working with code 2.
+
+If other I/O errors occur, exit code 3.
 
 */
 
